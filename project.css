@@ -1,0 +1,98 @@
+/* project.css — Form styling for Fitness Tracker
+   Updated: 2025-10-25
+------------------------------------------------------- */
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --brand: #2563eb;
+  --brand-light: #3b82f6;
+  --border: #e5e7eb;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container { width: min(100% - 2rem, 900px); margin-inline: auto; }
+.stack-lg > * + * { margin-top: 1.25rem; }
+.card {
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+h1, h2, h3 { color: var(--brand); }
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: .25rem;
+  display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--brand-light);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--brand-light);
+  transform: translateY(-2px);
+}
+
+.form-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}

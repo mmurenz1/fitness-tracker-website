@@ -11,3 +11,14 @@ This website helps users track their workouts, view summaries, and stay motivate
 ## Usage Instructions
 - Navigate through the menu to explore each section.
 - Use the contact form to send feedback or connect with the developer.
+
+---
+
+### 🌐 Live Website
+View the deployed website here:  
+👉 [https://mmurenz1.github.io/fitness-tracker-website/](https://mmurenz1.github.io/fitness-tracker-website/)
+
+### 💡 Author
+Created by Mickel Murenzi  
+University of West Georgia | CS2100: Web Development
+

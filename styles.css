@@ -1,6 +1,119 @@
-/* ---------------------------------------- */
-/* Collapsible Fitness Tips Styles          */
-/* ---------------------------------------- */
+/* -------------------------------
+   Global Styles
+--------------------------------- */
+:root {
+  --brand: #2b6cb0;
+  --brand-light: #63b3ed;
+  --border: #e2e8f0;
+  --radius: 0.5rem;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* -------------------------------
+   Header + Navigation
+--------------------------------- */
+.site-header {
+  background-color: var(--brand);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.primary-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.primary-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   Main Content
+--------------------------------- */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--brand);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------
+   Cards and Sections
+--------------------------------- */
+section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* -------------------------------
+   Footer
+--------------------------------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #edf2f7;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* -------------------------------
+   Links
+--------------------------------- */
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   Collapsible Fitness Tips
+--------------------------------- */
 details {
   background: #f9fafb;
   border: 1px solid var(--border);
@@ -35,7 +148,7 @@ details p {
   animation: fadeIn 0.4s ease;
 }
 
-/* Smooth fade animation when opened */
+/* Smooth fade animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

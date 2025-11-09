@@ -1,14 +1,15 @@
 /* project.css — Form styling for Fitness Tracker
    Updated: 2025-10-25
-------------------------------------------------------- */
-:root{
+------------------------------------------------------------- */
+
+:root {
   --bg: #ffffff;
   --text: #111827;
   --brand: #2563eb;
   --brand-light: #3b82f6;
   --border: #e5e7eb;
   --radius: 10px;
-  --shadow: 0 4px 12px rgba(0,0,0,.05);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -19,8 +20,15 @@ body {
   line-height: 1.6;
 }
 
-.container { width: min(100% - 2rem, 900px); margin-inline: auto; }
-.stack-lg > * + * { margin-top: 1.25rem; }
+.container {
+  width: min(100% - 2rem, 900px);
+  margin-inline: auto;
+}
+
+.stack-lg > * + * {
+  margin-top: 1.25rem;
+}
+
 .card {
   background: #f9fafb;
   border: 1px solid var(--border);
@@ -29,8 +37,11 @@ body {
   box-shadow: var(--shadow);
 }
 
-h1, h2, h3 { color: var(--brand); }
+h1, h2, h3 {
+  color: var(--brand);
+}
 
+/* Contact Form Styles */
 .contact-form {
   display: grid;
   gap: 1rem;
@@ -43,7 +54,7 @@ h1, h2, h3 { color: var(--brand); }
 
 .contact-form label {
   font-weight: 600;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   display: block;
 }
 
@@ -61,7 +72,7 @@ h1, h2, h3 { color: var(--brand); }
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--brand-light);
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+  box-shadow: 0 0 3px rgba(37, 99, 235, 0.2);
   outline: none;
 }
 
@@ -96,3 +107,45 @@ h1, h2, h3 { color: var(--brand); }
   font-size: 0.9rem;
   color: #6b7280;
 }
+
+/* ----------------------------- */
+/*  Workout Gallery Styles       */
+/* ----------------------------- */
+
+.gallery,
+.image-grid {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-grid figure {
+  width: 220px;
+  text-align: center;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.image-grid figcaption {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #333;
+}
+

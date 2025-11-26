@@ -35,13 +35,29 @@
     <h2>Purpose of the Website</h2>
     <p>This project helps users log workouts, track progress, and stay motivated.</p>
   </article>
-  <form class="card form" aria-labelledby="contact">
+  <form id="contactForm" class="card form" aria-labelledby="contact">
     <h2 id="contact">Contact Form</h2>
-    <label>Name<input type="text" name="name" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Message<textarea name="message" rows="5"></textarea></label>
+
+    <label>
+        Name
+        <input id="name" type="text" name="name" required>
+    </label>
+
+    <label>
+        Email
+        <input id="email" type="email" name="email" required>
+    </label>
+
+    <label>
+        Message
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </label>
+
+    <p id="formFeedback" style="font-weight: bold;"></p>
+
     <button class="btn" type="submit">Send</button>
-  </form>
+</form>
+
 </section>
 
   </main>
